@@ -1,6 +1,6 @@
 
 
-Questi template che uso tutti i giorni su Obsidian. 
+Questi sono i template che uso tutti i giorni su Obsidian. 
 
 Per supportarmi basta poco, puoi iscriverti al canale: https://www.youtube.com/@GiambattistaCiancio?sub_confirmation=1. Grazie! 🙏
 
