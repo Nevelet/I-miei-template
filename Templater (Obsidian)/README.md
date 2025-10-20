@@ -1,4 +1,4 @@
-Ciao a tutti!
+Ciao a tutti! 👋
 
 In questa cartella trovate alcuni template per il plugin [Templater](https://youtu.be/SdXSaYF29mg) di [Obsidian](https://youtu.be/FjkMf2KprnA).
 

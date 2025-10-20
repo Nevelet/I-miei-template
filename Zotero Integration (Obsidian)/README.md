@@ -1,4 +1,4 @@
-Ciao a tutti!
+Ciao a tutti! 👋
 
 In questa cartella trovate alcuni template per il plugin Zotero Integration di [Obsidian](https://youtu.be/FjkMf2KprnA). 
 
