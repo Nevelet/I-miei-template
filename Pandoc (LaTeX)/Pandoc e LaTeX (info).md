@@ -1,7 +1,7 @@
 
 ## Arguments Enhancing export
 
-### Arguments
+### Arguments (PDF)
 
 ```latex
 -f ${fromFormat} 
@@ -27,7 +27,7 @@ ${ options.textemplate ? `--resource-path="${pluginDir}/textemplate" --template=
 
 
 
-### Extra arguments
+### Extra arguments (PDF)
 
 ```latex
 --pdf-engine=pdflatex % Motore per la compilazione LaTeX
@@ -198,7 +198,7 @@ header-includes:
 --from markdown % formato del file originale che deve essere convertito. 
 --highlight-style=pygments % stile per il codice evidenziato (`tango`, `kate`, `monochrome`, ecc.)
 --listings % per formattare i blocchi di codice (``python,``js, ecc.)
---top-level-division=section (o chapter) % utile per i libri (capitoli invece di sezioni)
+--top-level-division=chapter (o section) % utile per i libri (capitoli invece di sezioni)
 --variable classoption=oneside % opzioni del documento (`oneside`, `twocolumn`, ecc.)
 --variable header-includes="\usepackage{tikz}" % inserisce pacchetti direttamente
 
