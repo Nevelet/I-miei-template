@@ -20,7 +20,7 @@ Questo placeholder `$body$` serve per il plugin Pandoc (o Enhancing Export) di O
 
 Puoi prendere i valori dal frontmatter (ovvero tramite le proprietà di Obsidian). Ad esempio se usi title nel frontmatter, puoi includerlo nel template in questo modo: `$title$`. Qui c'è un esempio di come è stato usato: `\newcommand{\booktitle}{$titolo$}`
 
-Trovi tutti i comandi per Frontmatter qui: https://github.com/Nevelet/I-miei-template/blob/main/Pandoc%20(LaTeX)/Pandoc%20e%20LaTeX%20(info).md#frontmatter
+Trovi tutti i comandi per Frontmatter [qui](https://github.com/Nevelet/I-miei-template/blob/main/Pandoc%20(LaTeX)/Pandoc%20e%20LaTeX%20(info).md#frontmatter)
 
 Assicurati inoltre che questi campi nel frontmatter si trovino anche nel template.  
 
