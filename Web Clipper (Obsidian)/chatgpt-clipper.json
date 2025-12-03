@@ -1,0 +1,34 @@
+{
+	"schemaVersion": "0.1.0",
+	"name": "ChatGPT",
+	"behavior": "overwrite",
+	"noteContentFormat": "{{selectorHtml:[class*=\"whitespace-pre-wrap\"], [class*=\"markdown prose dark:prose-invert w-full break-words dark markdown-new-styling\"] | join:\"\" | replace:('<div class=\"whitespace-pre-wrap':'<h1>Hai detto:</h1><div class=\"whitespace-pre-wrap\" , '<div class=\"markdown prose dark:prose-invert w-full break-words dark markdown-new-styling\"':'<h1>ChatGPT ha detto:</h1><div class=\"markdown prose dark:prose-invert w-full break-words dark markdown-new-styling\"') | markdown }}",
+	"properties": [
+		{
+			"name": "URL",
+			"value": "{{url}}",
+			"type": "text"
+		},
+		{
+			"name": "author",
+			"value": "{{author|split:\\\", \\\"|wikilink|join}}",
+			"type": "multitext"
+		},
+		{
+			"name": "created",
+			"value": "{{date}}",
+			"type": "date"
+		},
+		{
+			"name": "tags",
+			"value": "source/AI",
+			"type": "multitext"
+		}
+	],
+	"triggers": [
+		"https://chatgpt.com/share",
+		"https://chatgpt.com/c"
+	],
+	"noteNameFormat": "{{title}}",
+	"path": "Sources/AI"
+}

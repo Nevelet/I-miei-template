@@ -1,0 +1,33 @@
+{
+	"schemaVersion": "0.1.0",
+	"name": "Gemini",
+	"behavior": "overwrite",
+	"noteContentFormat": "{{selectorHtml:*:is(user-query, model-response message-content) | join:\"\" | replace:(\"<message-content\":\"<h1>Gemini ha detto:</h1><message-content\" , \"<user-query \":\"<h1>Hai detto:</h1><user-query \") | markdown }}",
+	"properties": [
+		{
+			"name": "URL",
+			"value": "{{url}}",
+			"type": "text"
+		},
+		{
+			"name": "author",
+			"value": "{{author|split:\\\", \\\"|wikilink|join}}",
+			"type": "multitext"
+		},
+		{
+			"name": "created",
+			"value": "{{date}}",
+			"type": "date"
+		},
+		{
+			"name": "tags",
+			"value": "source/AI",
+			"type": "multitext"
+		}
+	],
+	"triggers": [
+		"https://gemini.google.com/"
+	],
+	"noteNameFormat": "{{title}}",
+	"path": "Sources/AI"
+}

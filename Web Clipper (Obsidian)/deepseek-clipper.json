@@ -1,0 +1,33 @@
+{
+	"schemaVersion": "0.1.0",
+	"name": "DeepSeek",
+	"behavior": "overwrite",
+	"noteContentFormat": "{{selectorHtml:[class*=\"d29f3d7d\"], [class*=\"ds-markdown\"] | join:\"\" | replace:('<div class=\"d29f3d7d':'<h1>Hai detto:</h1><div class=\"d29f3d7d\" , '<div class=\"ds-markdown\"':'<h1>DeepSeek ha detto:</h1><div class=\"ds-markdown\"') | markdown }}",
+	"properties": [
+		{
+			"name": "URL",
+			"value": "{{url}}",
+			"type": "text"
+		},
+		{
+			"name": "author",
+			"value": "[[DeepSeek]]",
+			"type": "multitext"
+		},
+		{
+			"name": "created",
+			"value": "{{date}}",
+			"type": "date"
+		},
+		{
+			"name": "tags",
+			"value": "source/AI",
+			"type": "multitext"
+		}
+	],
+	"triggers": [
+		"https://chat.deepseek.com/"
+	],
+	"noteNameFormat": "{{selectorHtml:[class*=\"afa34042 e37a04e4 e0a1edb7\" | markdown}}",
+	"path": "Sources/AI"
+}
