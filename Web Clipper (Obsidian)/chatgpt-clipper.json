@@ -2,7 +2,7 @@
 	"schemaVersion": "0.1.0",
 	"name": "ChatGPT",
 	"behavior": "overwrite",
-	"noteContentFormat": "{{selectorHtml:[class*=\"whitespace-pre-wrap\"], [class*=\"markdown prose dark:prose-invert w-full break-words dark markdown-new-styling\"] | join:\"\" | replace:('<div class=\"whitespace-pre-wrap':'<h1>Hai detto:</h1><div class=\"whitespace-pre-wrap\" , '<div class=\"markdown prose dark:prose-invert w-full break-words dark markdown-new-styling\"':'<h1>ChatGPT ha detto:</h1><div class=\"markdown prose dark:prose-invert w-full break-words dark markdown-new-styling\"') | markdown }}",
+	"noteContentFormat": "{{selectorHtml:*:is([data-user-message-bubble],[data-markdown-text-style=assistant-message])|join:\"\"|replace:(\"<div data-user-message-bubble\":\"<h1>Hai detto:</h1><div data-user-message-bubble\",\"<div data-selected-text-overlay-target\":\"<h1>ChatGPT ha detto:</h1><div data-selected-text-overlay-target\")|markdown}}",
 	"properties": [
 		{
 			"name": "URL",
